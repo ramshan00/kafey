@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/f
 
 export default function Footer() {
   return (
-    <footer className="bg-amber-950 text-white py-10">
+    <footer  className="bg-amber-950 text-white py-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6">
         {/* About Us */}
         <div>
@@ -19,16 +19,16 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm text-gray-200">
-            <li><Link href="#home" className="hover:text-white">Home</Link></li>
-            <li><Link href="#about" className="hover:text-white">About</Link></li>
-            <li><Link href="#services" className="hover:text-white">Services</Link></li>
-            <li><Link href="#contact" className="hover:text-white">Contact</Link></li>
+
+            <li><Link href="about" className="hover:text-white">About Us</Link></li>
+            <li><Link href="location" className="hover:text-white">Location</Link></li>
+            <li><Link href="#contact" className="hover:text-white">Contact Us</Link></li>
             <li><Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link></li>
           </ul>
         </div>
 
         {/* Contact Us */}
-        <div>
+        <div id='contact'>
           <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
           <ul className="text-sm text-gray-200 space-y-2">
             <li>Phone: +1 (123) 456-7890</li>
