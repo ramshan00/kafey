@@ -154,7 +154,7 @@ function Page() {
                 src={item.image} 
                 alt={item.name} 
                 width={200} 
-                height={200} 
+                height={150} 
                 className="rounded-lg mb-4 object-cover h-60 w-full"
               />
               <h3 className="text-2xl font-semibold text-amber-950">{item.name}</h3>
@@ -164,7 +164,7 @@ function Page() {
                 href={`/Products/${item.id}`}
                 className="px-6 py-2 bg-amber-950 text-white font-semibold rounded hover:bg-amber-700 transition-all duration-300" 
               >
-                View Details
+                Add+
               </Link>
             </div>
           ))}

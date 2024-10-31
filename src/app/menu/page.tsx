@@ -109,7 +109,9 @@ function Page() {
               <p className="text-lg mb-4 text-amber-950">${deal.price.toFixed(2)} <span className="text-red-500">(Deal)</span></p>
               <Link 
                 href={`/Deals/${deal.id}`}
-                className="px-6 py-2 bg-amber-950 text-white font-semibold rounded hover:bg-amber-700 transition-all duration-300" 
+                className="px-6 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-amber-950 text-white font-semibold rounded hover:bg-amber-700 transition-all duration-300" 
+               
+
               >
                 View Details
               </Link>
@@ -162,9 +164,10 @@ function Page() {
               <p className="text-lg mb-4 text-amber-950">${item.price.toFixed(2)}</p> 
               <Link 
                 href={`/Products/${item.id}`}
-                className="px-6 py-2 bg-amber-950 text-white font-semibold rounded hover:bg-amber-700 transition-all duration-300" 
+                className="px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 bg-amber-950 text-white font-semibold rounded hover:bg-amber-700 transition-all duration-300"
+ 
               >
-                View Details
+                Add+
               </Link>
             </div>
           ))}
