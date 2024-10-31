@@ -119,7 +119,7 @@ function Page() {
       </section>
 
       {/* Categories Section */}
-      <section className="py-16 bg-orange-50 ">
+      <section className="py-16 bg-amber-50 ">
         <h2 className="text-amber-950 italic text-4xl font-semibold text-center mb-10">Categories</h2>
         <div className="flex flex-wrap justify-center gap-8">
           {/* Sample Category Buttons */}
@@ -149,7 +149,7 @@ function Page() {
         <h2 className="text-amber-950 text-4xl font-bold text-center mb-10 italic">Most Selling Items</h2>
         <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">
           {popularItems.map((item) => (
-            <div key={item.id} className="bg-orange-50 p-4 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
+            <div key={item.id} className="bg-amber-50 p-4 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
               <Image 
                 src={item.image} 
                 alt={item.name} 
@@ -157,7 +157,6 @@ function Page() {
                 height={150} 
                 className="rounded-lg mb-4 object-cover h-60 w-full"
               />
-              <h3 className="text-2xl font-semibold text-amber-950">{item.name}</h3>
               <h3 className="text-2xl font-semibold text-amber-950">{item.name}</h3>
               <p className="text-lg mb-4 text-amber-950">${item.price.toFixed(2)}</p> 
               <Link 

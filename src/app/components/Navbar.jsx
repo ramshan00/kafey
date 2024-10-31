@@ -13,10 +13,10 @@ export default function Navbar() {
     <nav className="bg-amber-950 text-white shadow-lg">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         <div className="text-4xl font-bold italic">
-          <span className="text-5xl font-semibold italic">K</span>afey
+          <span className="text-5xl font-semibold italic">Kafey</span>
         </div>
         <div className="hidden md:flex space-x-6">
-        <Link href="menu" className="hover:text-gray-200 transition-colors duration-300">Menu</Link>
+        <Link href="/" className="hover:text-gray-200 transition-colors duration-300">Home</Link>
           <Link href="about" className="hover:text-gray-200 transition-colors duration-300">About Us</Link>
           <Link href="location" className="hover:text-gray-200 transition-colors duration-300">Location</Link>
           <Link href="contact" className="hover:text-gray-200 transition-colors duration-300">Contact Us</Link>
@@ -48,7 +48,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden bg-amber-950`}>
-      <Link href="menu" className="block py-2 px-4 hover:text-gray-200">Menu</Link>
+      <Link href="/" className="block py-2 px-4 hover:text-gray-200">Home</Link>
         <Link href="about" className="block py-2 px-4 hover:text-gray-200">About Us</Link>
         <Link href="location" className="block py-2 px-4 hover:text-gray-200">Location</Link>
         <Link href="contact" className="block py-2 px-4 hover:text-gray-200">Contact Us</Link>
